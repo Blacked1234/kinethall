@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tr3"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/textViewCameraActivity"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/freestylescriptregular"
+            android:scaleType="fitCenter"
+            android:text="Kinethall"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:id="@+id/spac1"
+        android:layout_below="@id/tr3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bTakePicture"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spac1"
+        android:text="Take Picture"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:id="@+id/spac2"
+        android:layout_below="@id/bTakePicture"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bChoosePicture"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spac2"
+        android:text="Choose Picture"/>
+
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="37sp"
+        android:background="@drawable/ic_paw_print"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

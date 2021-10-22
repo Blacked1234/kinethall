@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProfileSettings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/freestylescriptregular"
+            android:scaleType="fitCenter"
+            android:text="Kinethall"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="70sp"
+            android:src="@mipmap/ic_profile_pic_dog_round"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="220sp" />
+
+        <!--<Button
+            android:id="@+id/bChangeAvatar"
+            android:layout_gravity="center"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextColorLogo"
+            android:backgroundTint="@color/ButtonBackground1"
+            android:text="Change Avatar"
+            android:textSize="16sp" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bChangeAvatar"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_button_bg_black"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Change Avatar"/>
+
+
+        <!--<Button
+            android:id="@+id/bChangeUsername"
+            android:backgroundTint="@color/ButtonBackground1"
+            android:textColor="@color/TextColorLogo"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Change Username" />-->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bChangeUsername"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_button_bg_black"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Change Username"/>
+
+
+        <!--
+        <Button
+            android:id="@+id/bChangeEmail"
+            android:backgroundTint="@color/ButtonBackground"
+            android:textColor="@color/TextColorLogo"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Change Email" />
+
+        <Button
+            android:id="@+id/bChangePassword"
+            android:backgroundTint="@color/ButtonBackground"
+            android:textColor="@color/TextColorLogo"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Change Password" />
+            -->
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

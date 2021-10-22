@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PetFragment"
+    android:padding="20sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hello!"
+        android:id="@+id/textWelcome"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/TextColorLogo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageButton1"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:padding="10sp"
+        android:background="@drawable/bluebutton"
+        android:layout_alignParentLeft="true"
+        android:text="Group Walks"
+        android:textSize="20sp"
+        android:layout_marginTop="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/TextColorLogo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageButton2"
+        android:layout_width="180sp"
+        android:layout_height="80sp"
+        android:padding="10sp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bluebutton"
+        android:text="Shelters"
+        android:textSize="20sp"
+        android:layout_marginTop="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/TextColorLogo" />
+
+
+</RelativeLayout>

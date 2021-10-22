@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:background="@drawable/round_corners">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image_search"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/ic_dogprofile"
+            android:padding="5sp" />
+
+        <TextView
+            android:id="@+id/username_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user_name"
+            android:textColor="@color/white"
+            android:layout_marginLeft="120sp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <!--<Button
+        android:id="@+id/bAddUser"
+        android:backgroundTint="@color/ButtonBackground1"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="16sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:layout_centerHorizontal="true"
+        android:text="Add" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bAddUser"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="10sp"
+        android:layout_centerHorizontal="true"
+        android:text="Add"/>
+
+
+
+
+</RelativeLayout>

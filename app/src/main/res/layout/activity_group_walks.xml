@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupWalks"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tr1"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/freestylescriptregular"
+            android:scaleType="fitCenter"
+            android:text="Kinethall"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="2sp"
+        android:layout_below="@id/tr1"
+        android:src="@drawable/ic_baseline_search_24_white"
+        />
+
+    <EditText
+        android:id="@+id/searchEditTextGroupWalks"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/tr1"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="5sp"
+        android:hint="Search..."
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search_groupwalks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/searchEditTextGroupWalks">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

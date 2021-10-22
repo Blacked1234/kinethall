@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageChange"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="70sp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_profile_pic_dog_round"/>
+
+    <Space
+        android:id="@+id/spc1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"/>
+
+    <!--<Button
+        android:id="@+id/bChooseAvatar"
+        android:layout_width="300sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/TextColorLogo"
+        android:backgroundTint="@color/ButtonBackground1"
+        android:text="Choose avatar"
+        android:textSize="16sp" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bChooseAvatar"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Choose avatar"/>
+
+    <Space
+        android:id="@+id/spc2"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"/>
+
+    <!--<Button
+        android:id="@+id/bConfirmChangeAvatar"
+        android:layout_width="300sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/TextColorLogo"
+        android:backgroundTint="@color/ButtonBackground1"
+        android:text="Confirm"
+        android:textSize="16sp" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bConfirmChangeAvatar"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Confirm"/>
+
+
+</LinearLayout>

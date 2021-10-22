@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kinethall.fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_2"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_marginTop="10sp"
+            android:src="@mipmap/ic_profile_pic_dog_round"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="150sp" />
+
+    <TextView
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:textColor="@color/white"
+        android:layout_below="@id/space2"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--<Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/TextColorLogo"
+        android:backgroundTint="@color/ButtonBackground1"
+        android:text="Edit Profile"
+        android:textSize="20sp"
+        android:layout_below="@id/etusername"
+        android:layout_centerHorizontal="true"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="300sp"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_below="@id/etusername"
+        android:layout_centerHorizontal="true"
+        android:text="Edit Profile"/>
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_below="@id/button5"/>
+
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:layout_below="@id/space3"/>
+
+    <LinearLayout
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/space3"
+        android:layout_centerInParent="true">
+
+
+    <LinearLayout
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/friends"
+            android:layout_below="@id/space3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_favorite_24_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/space4"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/dashboard"
+            android:layout_below="@id/space3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_dashboard_24_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Board"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<Button
+        android:id="@+id/bLogout"
+        android:backgroundTint="@color/ButtonBackground1"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space5"
+        android:layout_centerHorizontal="true"
+        android:text="Logout" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bLogout"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg_black"
+        android:textColor="@color/TextColorLogo"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_below="@id/space5"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:layout_marginBottom="10sp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_of_pics_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bLogout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_of_pics_profile_save"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_of_pics_profile"/>
+
+
+
+
+</RelativeLayout>

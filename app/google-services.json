@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "414424915918",
+    "firebase_url": "https://speedtest-b22c2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "speedtest-b22c2",
+    "storage_bucket": "speedtest-b22c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414424915918:android:6081b6cfd836a27136d59f",
+        "android_client_info": {
+          "package_name": "com.example.speedtest_eu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414424915918-96uv5idev1ilppeuk664gmbuablmhgta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJlgHdnBNrxZhFQAIP4rmGMXW2J81WXEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414424915918-96uv5idev1ilppeuk664gmbuablmhgta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

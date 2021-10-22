@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPost"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tra2"
+        android:layout_width="match_parent"
+        android:layout_height="43sp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/textViewAddPostCamera"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/freestylescriptregular"
+            android:scaleType="fitCenter"
+            android:text="Kinethall"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/tra2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_post_cam"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:src="@drawable/ic_baseline_camera_24_white"/>
+
+        <EditText
+            android:id="@+id/descrption_post_cam"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:maxLines="4"
+            android:textColorHint="@color/white"
+            android:hint="Say something"/>
+
+        <!--<Button
+            android:id="@+id/bAddPost"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="20sp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bTakePic"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_button_bg_black"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:text="Take Picture"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bAddPostCam"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_button_bg_black"
+            android:textColor="@color/TextColorLogo"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Add"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
